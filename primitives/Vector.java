@@ -4,6 +4,7 @@ package primitives;
  * Class Vector represents a vector in three-dimensional space.
  * Extends the Point class to inherit x, y, and z coordinates.
  *
+ *
  * @author Raphael
  */
 public class Vector extends Point {
