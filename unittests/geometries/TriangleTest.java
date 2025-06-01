@@ -6,7 +6,7 @@ package geometries;
 @SuppressWarnings("unused")
 class TriangleTest {
     /**
-     * Explicit empty default constructor to satisfy Javadoc generator
+     * Explicit empty default constructor to satisfy Javadoc generatorr
      */
     TriangleTest() {
     }
