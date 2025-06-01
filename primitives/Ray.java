@@ -22,7 +22,7 @@ public class Ray {
      * @param direction The direction vector of the ray.
      * @param origin    The origin point of the ray.
      */
-    public Ray(Vector direction, Point origin) {
+    public Ray(Point origin, Vector direction) {
         this.direction = direction.normalize(); // Normalize the direction vector
         this.origin = origin;
     }

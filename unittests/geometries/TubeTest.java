@@ -1,12 +1,12 @@
-package unittests.geometries;
+package geometries;
 
-import geometries.Tube;
 import org.junit.jupiter.api.Test;
 import primitives.Point;
 import primitives.Ray;
 import primitives.Vector;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * Unit tests for {@link geometries.Tube} class.
@@ -25,7 +25,7 @@ class TubeTest {
     /**
      * The axis ray for the tube (along Z-axis from origin)
      */
-    private final Ray axis = new Ray(new Vector(0, 0, 1), new Point(0, 0, 0));
+    private final Ray axis = new Ray(new Point(0, 0, 0), new Vector(0, 0, 1));
 
     /**
      * Test tube with radius 1
@@ -33,7 +33,7 @@ class TubeTest {
     private final Tube tube = new Tube(axis, 1);
 
     /**
-     * Test method for {@link Tube#getNormal(Point)}.
+     * Test method for {@link geometries.Tube#getNormal(primitives.Point)}.
      * Tests normal vector calculation for points on the tube's surface.
      */
     @Test

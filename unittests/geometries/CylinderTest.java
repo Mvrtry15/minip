@@ -1,12 +1,12 @@
-package unittests.geometries;
+package geometries;
 
-import geometries.Cylinder;
 import org.junit.jupiter.api.Test;
 import primitives.Point;
 import primitives.Ray;
 import primitives.Vector;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * Unit tests for {@link Cylinder} class.
@@ -24,7 +24,7 @@ class CylinderTest {
     /**
      * Ray representing the axis of the cylinder.
      */
-    private final Ray axis = new Ray(new Vector(0, 0, 1), new Point(0, 0, 0));
+    private final Ray axis = new Ray(new Point(0, 0, 0), new Vector(0, 0, 1));
 
     /**
      * Cylinder instance for testing.

@@ -1,4 +1,4 @@
-package unittests.geometries;
+package geometries;
 
 /**
  * unit tests for triangle

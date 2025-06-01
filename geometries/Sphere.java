@@ -1,7 +1,10 @@
 package geometries;
 
 import primitives.Point;
+import primitives.Ray;
 import primitives.Vector;
+
+import java.util.List;
 
 /**
  * Represents a sphere in 3D space.
@@ -41,5 +44,10 @@ public class Sphere extends RadialGeometry {
     public Vector getNormal(Point point) {
         Vector normal = point.subtract(center);
         return normal.normalize();
+    }
+
+    @Override
+    public List<Point> findIntersections(Ray ray) {
+        return null;
     }
 }

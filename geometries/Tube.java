@@ -48,4 +48,9 @@ public class Tube extends RadialGeometry {
         Point o = isZero(t) ? axisRay.origin() : axisRay.origin().add(axisRay.direction().scale(t));
         return point.subtract(o).normalize();
     }
+
+    @Override
+    public java.util.List<primitives.Point> findIntersections(Ray ray) {
+        return null;
+    }
 }

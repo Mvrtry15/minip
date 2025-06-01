@@ -1,11 +1,11 @@
-package unittests.geometries;
+package geometries;
 
-import geometries.Sphere;
 import org.junit.jupiter.api.Test;
 import primitives.Point;
 import primitives.Vector;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * Unit tests for {@link geometries.Sphere} class.
@@ -27,7 +27,7 @@ class SphereTest {
     private static final double DELTA = 0.000001;
 
     /**
-     * Test method for {@link geometries.Sphere#getNormal(Point)}.
+     * Test method for {@link geometries.Sphere#getNormal(primitives.Point)}.
      * Tests normal vector calculation for points on the sphere's surface.
      */
     @Test
@@ -45,7 +45,7 @@ class SphereTest {
     }
 
     /**
-     * Test method for {@link Sphere#getNormal(Point)}.
+     * Test method for {@link geometries.Sphere#getNormal(primitives.Point)}.
      * Tests normal vector calculation for points on each axis.
      */
     @Test
@@ -80,7 +80,7 @@ class SphereTest {
     }
 
     /**
-     * Test method for {@link Sphere#getNormal(Point)}.
+     * Test method for {@link geometries.Sphere#getNormal(primitives.Point)}.
      * Tests behavior when point is at sphere's center.
      */
     @Test
@@ -94,4 +94,6 @@ class SphereTest {
                 () -> sphere.getNormal(new Point(0, 0, 0)),
                 "Should throw exception when point is at sphere's center");
     }
+
+
 }

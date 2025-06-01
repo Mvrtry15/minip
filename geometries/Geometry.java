@@ -9,7 +9,7 @@ import primitives.Vector;
  *
  * @author Raphael
  */
-public abstract class Geometry {
+public abstract class Geometry implements Intersectable {
     /**
      * Explicit empty default constructor to satisfy Javadoc generator
      */
