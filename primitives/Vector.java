@@ -5,6 +5,7 @@ package primitives;
  * Extends the Point class to inherit x, y, and z coordinates.
  *
  *
+ *
  * @author Raphael
  */
 public class Vector extends Point {
